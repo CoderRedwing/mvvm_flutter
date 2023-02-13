@@ -11,7 +11,7 @@ class ApiResponse<T>{
   ApiResponse.loading() :status=Status.LOADING;
   ApiResponse.completed() :status=Status.COMPLETED;
   ApiResponse.error() :status=Status.ERROR;
-  ApiResponse.success() :status=Status.SUCCESS;
+  
   @override
   String toString(){
    return "Status:$status \n Message:$message \n Data:$data";
