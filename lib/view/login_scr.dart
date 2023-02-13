@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvvm/utills/routes/routes_name.dart';
+import 'package:mvvm/utills/utills.dart';
 import 'package:mvvm/view/home_scr.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -18,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
      body:  Center(
        child: InkWell(
          onTap: (){
+           Utils.toastMessage('hello');
            Navigator.pushNamed(context, RouteName.home);
            //Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
          },
